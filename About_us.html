@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .paraa {
+    background: url('about_us.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.paraa h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    
+}
+
+.paraa p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.Know-Us {
+    padding: 10px 10px;
+    text-align: center;
+    background: url('nsjxs.png') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+}
+
+.Know-Us h2 {
+    font-size: 2.5em;
+}
+
+.our-commitment {
+    position: relative;
+    text-align: left;
+    padding: 50px 0;
+    margin: 20px 0;
+}
+
+.commitment-heading {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.commitment-content {
+    background: url('our_commitment.png') no-repeat center center/cover;
+    background-size: cover;
+    height: 550px; /* Adjust the height as needed */
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.commitment-text {
+    max-width: 50%;
+    color: #000000;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0); /* Add a background color for better readability */
+    border-radius: 10px;
+}
+
+.commitment-text p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.why-choose-us .container {
+    display: inline-block;
+    width: 23%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #ddd; /* Border for the containers */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for pop-up animation */
+}
+
+.why-choose-us .container:hover {
+    transform: scale(1.05); /* Scale up the container */
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2); /* Add shadow for pop-up effect */
+}
+
+.why-choose-us .container i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Color the icons individually */
+.why-choose-us .container:nth-child(1) i {
+    color: rgb(0, 204, 255);
+}
+
+.why-choose-us .container:nth-child(2) i {
+    color: rgb(202, 104, 119);
+}
+
+.why-choose-us .container:nth-child(3) i {
+    color: rgb(3, 86, 170);;
+}
+
+.why-choose-us .container:nth-child(4) i {
+    color: orange;
+}
+
+.why-choose-us .container p {
+    margin: 5px 0;
+}
+
+        .join-us {
+            display: flex;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .join-us .text-content {
+            flex: 1;
+        }
+
+        .join-us h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .join-us p {
+            text-align: left;
+            max-width: 80%;
+        }
+
+        .vertical-line {
+            width: 5px;
+            background-color: orange;
+            height: 150px;
+            margin: 0 20px;
+        }
+
+        .join-us img {
+            width: 300px;
+            height: auto;
+            flex: 1;
+        }
+        .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 204, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #FFA500; /* Darker shade of orange on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>Ride-smart</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="About_us.html">About</a>
+            <a href="all_courses.html">All Courses</a>
+            <div class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content" >
+                    <a href="more.html">Become a Trainer</a>
+                </div>
+            </div>
+            <a href="contact_us.html">Contact</a>
+        </nav>
+        <a href="all_courses.html">
+            <button class="get-started">Get Started</button>
+        </a>
+        
+    </header>
+
+    <section class="paraa">
+        <h1>Empower Your Career <br> with Cutting-Edge <br> AI Skills</h1>
+        <p>Embark on a transformative educational journey with us,<br> where learning meets innovation at every step.</p>
+    </section>
+
+    <section class="Know-Us">
+        <h2>Know Us</h2>
+        <p>Welcome to Ride-smart Academy, where we specialize in equipping individuals with the essential knowledge and skills to thrive in the dynamic realm of Artificial Intelligence. </p>
+        <p>Whether you're stepping into AI for the first time or seeking to deepen your expertise, our tailored training programs cater to all skill levels and career aspirations.</p>
+        <p>Become part of a movement dedicated to shaping the future of education through innovation and creativity.</p>
+    </section>
+
+    <section class="our-commitment">
+        <h2 class="commitment-heading">Our Commitment</h2>
+        <div class="commitment-content">
+            <div class="commitment-text">
+        <p>
+            At Ride-smart Academy, we pride ourselves on offering comprehensive AI training programs designed to meet the diverse needs of our students. Our courses are crafted and delivered by industry experts who bring real-world experience and cutting-edge insights into every lesson.
+        </p>
+    </div>
+</div>
+</section>
+
+<section class="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <div class="container">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <p><b>Expert Instructors</b></p>
+        <p>Learn from seasoned professionals and academics at the forefront of AI research.
+        </p>
+    </div>
+    <div class="container">
+        <i class="fas fa-laptop-code"></i>
+        <p><b>Practical Learning</b></p>
+        <p>Engage in hands-on projects and case studies that prepare you for real-world challenges.
+        </p>
+    </div>
+    <div class="container">
+        <i class="fas fa-calendar-alt"></i>
+        <p><b>Flexible Learning Option</b></p>
+        <p>Access courses online, at your own pace to tailor the educational experience.
+                </p>
+    </div>
+    <div class="container">
+        <i class="fas fa-briefcase"></i>
+        <p><b>Career Advancement</b></p>
+        <p>Gain the skills and confidence needed to excel in AI-driven industries and sectors.</p>
+
+    </div>
+</section>
+
+    <section class="join-us">
+        <div class="text-content">
+            <h2>Join Us</h2>
+            <p>
+                Transform your career with AI Mastery Academy. Explore our range of courses and take the first step towards mastering AI. Whether you aspire to become a data scientist, AI engineer, or business leader leveraging AI technologies, we have the resources and expertise to support your journey.
+            </p>
+            <a href="contact_us.html" class="contact-btn">Contact Us</a>
+        </div>
+        <div class="vertical-line"></div>
+        <img src="join_us.png" alt="Join Us">
+    </section>
+
+
+    <footer class="footer background-section3">
+        <div class="footer-left">
+            <h3>Ride-Smart</h3>
+            <p>Empower Your Career with Cutting-Edge AI Skills</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-center">
+            <nav class="footer-nav">
+                
+                    <ul>
+                        <h2>Company</h2>    
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About_us.html">About Us</a></li>
+                        <li><a href="all_courses.html">All Courses</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
+                    </ul>
+                
+            </nav>
+        </div>
+        <div class="footer-right">
+            <h2>Address</h2>
+            <p>
+                CORPORATE OFFICE<br>
+                100 Consilium Place, Suite 200<br> 
+                Scarborough,ON M1H 3E3
+            </p>
+            <p class="phone">+1 647 476 4449</p>
+            <p class="email">ceo(at)sarascan.ca</p>
+            
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

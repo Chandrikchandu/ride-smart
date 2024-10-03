@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+}
+header .menu :hover {
+    color: orange; /* Pale yellow color */
+}
+
+header .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .menu .dropdown {
+    position: relative;
+    
+}
+header .menu .dropdown-content :hover{
+    color: orange;
+}
+
+header .menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+header .menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+header .menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .get-started {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('homepage_img.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.hero .enroll-now {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.our-mission {
+    padding: 50px 20px;
+    text-align: center;
+    background: url('nsjxs.png') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+}
+
+.our-mission h2 {
+    font-size: 2.5em;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.skills-text {
+    flex: 1;
+    max-width: 40%;
+}
+
+.skills-text p {
+    margin: 10px 0;
+}
+
+.skills-text .read-more {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.skills-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    flex: 1;
+    max-width: 50%;
+    margin-left: 60px;
+ 
+}
+
+.skills-containers .container {
+    background-color: rgb(253, 251, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Add border here */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+.skills-containers .container span {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgba(0,204,255);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width of the grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between the cards */
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    height: 300px;
+    padding: 1rem 0.5rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    border-radius: 8px; /* Add border radius for smoother edges */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slightly lift the card on hover */
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(39, 90, 187, 0.5));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px; /* Add border radius to image to match the card */
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: black;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info h1 {
+    margin: 0;
+
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 0rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 4px; /* Add border radius to button */
+}
+
+.card .info .btn:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline {
+    display: flex;
+    padding: 50px 20px;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+    flex: 1;
+}
+
+.timeline ul li {
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+.timeline img {
+    flex: 1;
+    max-width: 100%; /* Ensure it doesn't exceed the width of its container */
+    width: 50%; /* Set a specific width to control the size */
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer Container */
+.footer {
+    background-color: #070707;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 10px 0;
+    height: 300px; /* Reduced height */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+/* Site Name Section */
+.footer-left {
+    flex: 1;
+    text-align: left;
+    margin-top: 80px; /* Reduced margin */
+    margin-left: 40px; /* Margin for site name section */
+}
+
+.footer-left h3 {
+    font-size: 30px; /* Reduced font size */
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.footer-left p {
+    margin-bottom: 10px; /* Reduced margin */
+    font-family: sans-serif;
+}
+
+/* Social Icons Section */
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Margin for social icons */
+    text-align: left;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 20px; /* Reduced font size */
+    transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: orange;
+}
+
+/* Navigation Links Section */
+.footer-center {
+    flex: 1;
+    text-align: center;
+    margin-top: 80px; /* Reduced margin */
+    margin-left: 200px; /* Adjusted margin */
+}
+.footer-nav h2 {
+    font-size: 18px; /* Reduced font size */
+    color: #ffffff; /* Heading color */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Align text to the left within the container */
+}
+
+.footer-nav ul li {
+    display: block; /* Display links in a block to make them appear in a column */
+    margin-bottom: 10px; /* Adjust spacing between links */
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px; /* Reduced font size */
+    font-family: sans-serif;
+}
+
+.footer-nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Location Section */
+.footer-right {
+    flex: 1;
+    text-align: left;
+    margin-left: 100px; /* Margin for location section */
+    font-family: sans-serif;
+    margin-top: 80px; /* Reduced margin */
+}
+
+/* Address Heading */
+.footer-right h2 {
+    font-size: 18px; /* Reduced font size */
+    color: #ffffff; /* Heading color */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+/* Address Paragraph */
+.footer-right p {
+    font-size: 14px; /* Reduced font size */
+    line-height: 1.2; /* Reduce line height for paragraph */
+    color: #ffffff; /* Paragraph color */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+/* Phone Number */
+.footer-right .phone {
+    font-weight: bold; /* Bold font for phone number */
+    color: #ffffff; /* Phone number color */
+    line-height: 1.2; /* Reduce line height */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+/* Email */
+.footer-right .email {
+    font-style: italic; /* Italic style for email */
+    color: #ffffff; /* Email color */
+    line-height: 1.2; /* Reduce line height */
+    margin-bottom: 5px; /* Reduce bottom margin */
+}

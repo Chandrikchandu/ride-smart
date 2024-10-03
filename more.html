@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Hero Section */
+        .oreo {
+            background: url('more_img.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            color: rgb(0, 0, 0);
+            opacity: 1;
+        }
+        .oreo h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    
+}
+
+.oreo p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+        .trainer-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px 150px; /* Reduced padding */
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .trainer-content {
+            max-width: 600px;
+            margin-right: 10%;
+        }
+
+        .trainer-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .trainer-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .trainer-content p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .trainer-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .benefit i {
+            font-size: 2rem;
+            color: orange;
+        }
+
+        .benefit h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        .benefit p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Contact Container */
+/* Contact Container */
+.contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto; /* Reduced margin */
+}
+
+.contact-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 16px;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    padding: 10px 10px 10px 30px; /* Adjusted padding to accommodate the icon */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-container form textarea {
+    height: 100px;
+    resize: vertical;
+    padding: 10px 10px 10px 30px; /* Adjust padding to accommodate the icon */
+}
+
+.recaptcha-container {
+    margin-bottom: 15px;
+}
+
+.contact-container form button {
+    background-color: rgb(0, 204, 255);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-container form button:hover {
+    background-color: rgb(0, 204, 255);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>Ride-smart</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="About_us.html">About</a>
+            <a href="all_courses.html">All Courses</a>
+           
+            <div class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content">
+                    <a href="more.html">Become a Trainer</a>
+                </div>
+            </div>
+            <a href="contact_us.html">Contact</a>
+        </nav>
+        <a href="all_courses.html">
+            <button class="get-started">Get Started</button>
+        </a>
+    </header>
+
+    <section class="oreo">
+            <h1>Revolutionize Your Career <br>Path with Innovative <br>AI Competencies</h1>
+            <p> </p>
+ 
+    </section>
+
+    <section class="trainer-section">
+        <div class="trainer-content">
+            <h2>Become A Trainer</h2>
+            <h1 style="font-weight: bold;font-size: xx-large;">Why become a trainer with Ride-smart?</h1>
+            <p>To be a successful Trainer you need to have the right combination of Knowledge, Skills, and Attitude.</p>
+        </div>
+        <div class="trainer-benefits">
+            <div class="benefit">
+                <i class="fas fa-money-bill-wave"></i>
+                <div>
+                    <h3>Earn Well</h3>
+                    <p>Ride-smart is known to offer attractive packages and timely payments.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-globe"></i>
+                <div>
+                    <h3>Exposure</h3>
+                    <p>We train organizations worldwide, which spells increased visibility and endless opportunities for you.</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>Anytime, Anywhere</h3>
+                    <p>Apart from our classroom programs, we offer you the flexibility to conduct training from Anywhere</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contact-container">
+            <h2>Become a Trainer?</h2>
+            <p>Submit your Request for a Trainer.</p>
+            <form>
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" name="phone" placeholder="Phone">
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-briefcase"></i>
+                    <input type="text" name="expertise" placeholder="Expertise">
+                </div>
+                <div class="input-container">
+ 
+                    <textarea name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="recaptcha-container">
+                    <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                </div>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer class="footer background-section3">
+        <div class="footer-left">
+            <h3>Ride-Smart</h3>
+            <p>Empower Your Career with Cutting-Edge AI Skills</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-center">
+            <nav class="footer-nav">
+                <ul>
+                    <h2>Company</h2>    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About_us.html">About Us</a></li>
+                    <li><a href="all_courses.html">All Courses</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-right">
+            <h2>Address</h2>
+            <p>
+                CORPORATE OFFICE<br>
+                100 Consilium Place, Suite 200<br> 
+                Scarborough,ON M1H 3E3
+            </p>
+            <p class="phone">+1 647 476 4449</p>
+            <p class="email">ceo(at)sarascan.ca</p>
+            
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

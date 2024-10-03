@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .write {
+    background: url('courses_img.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: rgb(26, 25, 25);
+}
+.write h1 {
+    font-size: 3em;
+    margin-bottom: 70px;
+}
+
+ 
+
+.our-courses {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .our-courses h2 {
+            font-size: 2.5em;
+        }
+
+        .line {
+            display: inline-block;
+            width: 100px;
+            height: 2px;
+            background-color: orange;
+            margin: 0 10px;
+        }
+  .container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .course-card {
+    border: 1px solid;
+    border-image: linear-gradient(135deg, #0673f8, #022755) 1; /* Blue gradient */
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff; /* Background color of the card */
+    transition: transform 0.2s;
+}
+
+  
+.course-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .course-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .course-card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .course-card p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .enroll-button, .contact-button {
+    display: inline-block;
+    background-color:   #032652;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0.5rem 0;
+  }
+  
+  .contact-button {
+    background-color:  #032652;
+  }
+  
+  .enroll-button:hover, .contact-button:hover {
+    background-color:  #0673f8;
+  }
+  
+  .contact-button:hover {
+    background-color:  #0673f8;
+  }
+
+   
+  </style>
+</head>
+<body>
+    <header>
+      <div class="logo">
+          <img src="logo.png" alt="Logo">
+          <span>Ride-smart</span>
+      </div>
+      <nav class="menu">
+          <a href="index.html">Home</a>
+          <a href="About_us.html">About</a>
+          <a href="all_courses.html">All Courses</a>
+          <div class="dropdown">
+              <a href="#">More</a>
+              <div class="dropdown-content">
+                  <a href="more.html">Become a Trainer</a>
+              </div>
+          </div>
+          <a href="contact_us.html">Contact</a>
+      </nav>
+      <a href="all_courses.html">
+        <button class="get-started">Get Started</button>
+    </a>
+  </header>
+
+  <section class="write">
+      <h1>Unlock the future with <br>AI—a world where innovation <br>meets limitless<br> potential.</h1>
+       
+</section>
+ 
+<section class="our-courses">
+  <h2>Our Courses</h2>
+  <div class="line"></div>
+  <div class="line"></div>
+  <p>Explore our range of courses and take the first step towards mastering AI</p>
+  <div class="container">
+    <div class="grid-container">
+      <div class="course-card">
+        <img src="python.png" alt="Course 1">
+        <h2>Python Programming</h2>
+        <p>Ace Python concepts,different data types,conditional statements and user-defined functions</p>
+        <a href="#" class="enroll-button">Contact for Prize</a>
+      </div>
+      <div class="course-card">
+        <img src="machine_learn.png" alt="Course 3">
+        <h2>Machine Learning with Python</h2>
+        <p>Learn about Regression and Classification algorithms and build Machine Learning models</p>
+        <a href="#" class="enroll-button">Contact for Prize</a>
+ 
+      </div>
+      <div class="course-card">
+        <img src="deep_learning (2).png" alt="Course 4">
+        <h2>Deep Learning</h2>
+        <p>Learn to use Keras and TensorFlow to solve complex problems with Deep Learning models </p>
+        <a href="#" class="enroll-button">Contact for Prize</a>
+ 
+      </div>
+      <div class="course-card">
+        <img src="nlp.png" alt="Course 5">
+        <h2>Natural Language Processing</h2>
+        <p>Understand advanced NLP concepts,learn to use NLTK,Natural Language Generation.</p>
+        <a href="#" class="enroll-button">Contact for Prize</a>
+ 
+      </div>
+      <div class="course-card">
+        <img src="ai_transforms.png" alt="Course 6">
+        <h2>AI with Transformers</h2>
+        <p>Understand why AI Transformer models are so unique and build robust applications using them</p>
+        <a href="#" class="enroll-button">Contact for Prize</a>
+ 
+      </div>
+      <div class="course-card">
+        <img src="stats.png" alt="Course 2">
+        <h2>Statistical Modelling</h2>
+        <p>Gain a thorough understanding of maths and statistics foundation for Machine Learning.</p>
+        <a href="#" class="enroll-button">Contact for Prize</a>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+ 
+    <!-- Footer Section -->
+    <footer class="footer background-section3">
+      <div class="footer-left">
+          <h3>Ride-Smart</h3>
+          <p>Empower Your Career with Cutting-Edge AI Skills</p>
+          <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-center">
+          <nav class="footer-nav">
+              <ul>
+                <h2>Company</h2>    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About_us.html">About Us</a></li>
+                <li><a href="all_courses.html">All Courses</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="footer-right">
+          <h2>Address</h2>
+          <p>
+            CORPORATE OFFICE<br>
+            100 Consilium Place, Suite 200 <br>
+            Scarborough,ON M1H 3E3
+          </p>
+          <p class="phone">+1 647 476 4449</p>
+          <p class="email">ceo(at)sarascan.ca</p>
+          
+      </div>
+      
+  </footer>
+  
+</body>
+</html>
